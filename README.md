@@ -23,5 +23,5 @@ Now we can see that the creation of CarWithAc is little bit complex. This comple
 Unit test has been implemented to test the created objects
 
 # Test 3
-We have to create a video player which is capable to play,forward,rewind. A Player interface can be introduced where play,forward and rewind methods are available. A class called VideoPlayer can be created which will actually implement Player interface. VideoPlayer class can have a MediaPlayer property which will actually control the video depending on calling of methods in Player interface.
+We have to create a video player which is capable to play,forward,rewind. To solve this a Player interface can be introduced where play,forward and rewind methods are available. A class called VideoPlayer can be created which will actually implement Player interface. VideoPlayer class can have a MediaPlayer property which will actually control the video depending on calling of methods in Player interface.
 

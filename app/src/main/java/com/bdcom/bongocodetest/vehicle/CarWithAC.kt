@@ -2,11 +2,11 @@ package com.bdcom.bongocodetest.vehicle
 
 class CarWithAC(var ac: Ac) : Car() {
 
-    fun startAc(){
+    fun startAc() {
         ac.start()
     }
 
-    fun stopAc(){
+    fun stopAc() {
         ac.stop()
     }
 }

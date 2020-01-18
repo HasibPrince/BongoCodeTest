@@ -14,13 +14,14 @@ import org.junit.Assert.*
 class VehicleTest {
 
     @Test
-    fun testAcAvailabilityOnCar(){
-        val acCar = VehicleFactory.buildVehicle(VehicleFactory.VEHICLE_TYPE.CAR_WITH_AC) as CarWithAC
+    fun testAcAvailabilityOnCar() {
+        val acCar =
+            VehicleFactory.buildVehicle(VehicleFactory.VEHICLE_TYPE.CAR_WITH_AC) as CarWithAC
         assertNotNull(acCar.ac)
     }
 
     @Test
-    fun testGasAvailabilityOnVehicle(){
+    fun testGasAvailabilityOnVehicle() {
         val plane = VehicleFactory.buildVehicle(VehicleFactory.VEHICLE_TYPE.PLANE, 300)
         assertFalse(plane.hasGas())
 
@@ -32,7 +33,7 @@ class VehicleTest {
     }
 
     @Test
-    fun testSeatsOfVehicle(){
+    fun testSeatsOfVehicle() {
         val plane = VehicleFactory.buildVehicle(VehicleFactory.VEHICLE_TYPE.PLANE, 300)
         assertEquals(plane.getNumberOfPassangers(), 300)
 

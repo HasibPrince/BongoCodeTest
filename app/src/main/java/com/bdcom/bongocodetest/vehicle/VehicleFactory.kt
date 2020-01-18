@@ -10,7 +10,7 @@ object VehicleFactory {
             }
 
             VehicleFactory.VEHICLE_TYPE.CAR_WITH_AC -> {
-                AcCarBuilder.addAc()
+                AcCarBuilder.addAc(createAc())
                     .build()
             }
 
@@ -18,6 +18,17 @@ object VehicleFactory {
                 Plane(numberOfPassengers)
             }
 
+
+        }
+    }
+
+    private fun createAc(): Ac {
+        return object : Ac {
+            override fun start() {
+            }
+
+            override fun stop() {
+            }
 
         }
     }

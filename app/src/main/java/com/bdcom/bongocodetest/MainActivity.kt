@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity(), KoinComponent {
         }
         videoView.setVideoURI(viewModel.getVideoPath())
 
+        play.setOnClickListener {
+            viewModel.play()
+        }
         rewind.setOnClickListener {
             viewModel.rewind()
         }

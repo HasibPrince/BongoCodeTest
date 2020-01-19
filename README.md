@@ -5,7 +5,7 @@ First test is answered in a file named AnagramChecker.kt.
 
 Second test is answered in a package named vehicle.
 
-Third test is answered in a package named player and composing of the VideoPlayer object in MainActivity.
+Third test is answered in a package named player and composing of the VideoPlayer object has been done in a ViewModel.
 
 # Test 1:
 I have tried to solve the problem in two ways. First one i have tried using map, second one using sorting. 
@@ -24,4 +24,6 @@ Unit test has been implemented to test the created objects
 
 # Test 3
 We have to create a video player which is capable to play,forward,rewind. To solve this a Player interface can be introduced where play,forward and rewind methods are available. A class called VideoPlayer can be created which will actually implement Player interface. VideoPlayer class can have a MediaPlayer property which will actually control the video depending on calling of methods in Player interface.
+
+Now app is Video Playable. User can watch a video, rewind and forward. MVVM and DI are also introduced. VideoPlayer object has been shifted to ViewModel. ViewModel helps his caller to control the video with this VideoPlayer object. MainActivity has a object of ViewModel. MainActivity controls the video through this viewmodel object.
 

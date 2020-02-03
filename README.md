@@ -16,7 +16,7 @@ We had a interface called Vehicle. We have to create Two objects, Car And Plane.
 Here Two classes, Car And plane are implemented. Both of them implements Vehicle Interface.
 To create objects of a particular type, Factory pattern has been introduced. Here the logics of creation of these objects are encapsulated in a class. If we spread the logic of these object creation within the whole projects, and if we need to change the process of object creation, we have to change in whole application. It will make hard to maintain and apply any changes in the code base.
 
-If any extended version of an object is needed to introduce, suppose Car with Ac. We can modify the existing class car to add the ac Support. But it clearly breaks OPEN CLOSED PRINICPLE. Here we can introduce decorator pattern. We can extend existing Car class to implement a Ac supported car. That' what is done here.
+If any extended version of an object is needed to introduce, suppose Car with Ac. We can modify the existing class car to add the ac Support. But it clearly breaks OPEN CLOSED PRINICPLE. Here We can extend existing Car class to implement a Ac supported car. That' what is done here.
 
 Now we can see that the creation of CarWithAc is little bit complex. This complexity is being spreaded in VehicleFactory. To avoid this, building this complex object can be encapulated in a class what is actually Builder pattern.
 
